@@ -1,0 +1,50 @@
+body[data-admin-portal="true"] footer,
+body[data-admin-portal="true"] #chat,
+body[data-admin-portal="true"] #chatBtn {
+  display: none !important;
+}
+
+body[data-admin-portal="true"] .admin-section {
+  scroll-margin-top: 100px;
+  padding-top: 8px;
+}
+
+body[data-admin-portal="true"] #nav {
+  justify-content: flex-end;
+}
+
+body[data-admin-portal="true"] .admin-logout-form {
+  margin: 0;
+}
+
+body[data-admin-portal="true"] .admin-logout-form button {
+  border: 0;
+  background: transparent;
+  color: var(--soft);
+  cursor: pointer;
+  font: 600 14px 'Work Sans', sans-serif;
+  padding: 8px 14px;
+}
+
+body[data-admin-portal="true"] .admin-logout-form button:hover {
+  border-radius: 20px;
+  background: var(--sage);
+  color: var(--pine);
+}
+
+@media (max-width: 760px) {
+  body[data-admin-portal="true"] .top {
+    align-items: flex-start;
+  }
+
+  body[data-admin-portal="true"] #nav {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  body[data-admin-portal="true"] #nav a,
+  body[data-admin-portal="true"] .admin-logout-form button {
+    padding: 6px 9px;
+    font-size: 12px;
+  }
+}
